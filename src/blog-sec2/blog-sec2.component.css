@@ -1,0 +1,99 @@
+
+.hero {
+    display: flex;
+    flex-direction: column; /* Stacks the image and banner vertically */
+    align-items: center; /* Centers content horizontally */
+    margin: 80px 0;
+}
+.hero-heading1 {
+    width: 85%;
+    text-align: start; /* Center the heading text */
+    font-size: 2em; /* Adjust the size as needed */
+    margin-bottom: 5px; /* Space between heading and image */
+    color: #333; /* Heading text color */
+    font-family: 'Arial Narrow', 'Arial', sans-serif; /* Tall and narrow font */
+    font-weight: 600;
+    cursor: pointer;
+}
+.hero-heading1:hover{
+    color: #D8252F;
+}
+.hero-heading2{
+    width: 85%;
+    text-align: start; /* Center the heading text */
+    font-size: 1.5em; /* Adjust the size as needed */
+    margin-bottom: 40px; /* Space between heading and image */
+    color: #D8252F;
+    cursor: pointer;
+}
+
+.hero img {
+    width: 85%;
+    height: auto;
+    display: block;
+    border-bottom: none; /* No border between image and banner */
+}
+
+.banner {
+    width: 85%;
+    background: #333333;
+    color: #fff;
+    padding: 25px 20px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.2em;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.banner span {
+    display: inline-block;
+    margin-right: 3rem; /* Space between elements */
+}
+.p1 , .p2{
+    width: 85%;
+    line-height: 2rem;
+}
+.p1{
+    margin-top: 40px;
+}
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333333;
+    color: white;
+    font-size: 1em;
+    font-family: 'Arial Narrow', 'Arial', sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 40px;
+    margin-bottom: 6rem;
+}
+
+.custom-button:hover {
+    background-color: #D8252F;
+}
+
+.line {
+    width: 85%; /* Line width */
+    height: 1px; /* Line thickness */
+    background-color: #CCCCCC; /* Line color */
+    margin: 20px 0; /* Optional: Margin around the line */
+  }
+
+
+@media (max-width: 768px) {
+
+    .banner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .banner span {
+        margin-bottom: 5px;
+        margin-right: 0;
+    }
+}

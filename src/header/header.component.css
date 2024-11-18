@@ -1,0 +1,68 @@
+/* Navbar background image */
+.navbar {
+    background: url('../assets/navbar-background.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 0;
+    color: white; /* Ensure the text color is white */
+  }
+  
+  /* Navbar container adjustments */
+  .navbar .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+  
+  /* Navbar brand adjustments */
+  .navbar .navbar-brand {
+    font-size: 4rem;
+    margin-left: 12vw;
+    color: #CA0610; /* Brand color */
+    font-family: "Gwendolyn", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  /* Centering navbar items */
+  .navbar .navbar-nav {
+    flex: 1;
+    justify-content: center;
+    margin: 0;
+    padding-right: 12vw;
+    text-transform: uppercase;
+  }
+  
+  /* Centering and styling nav items */
+  .nav-item {
+    margin: 0 0.5rem;
+  }
+  
+  /* Making nav links white */
+  .nav-link {
+    color: white !important; /* Force white color */
+    line-height: 1.5;
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Navbar toggler adjustments */
+  .navbar .navbar-toggler {
+    margin-left: auto;
+  }
+  
+  /* Navbar collapse adjustments */
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+  
+  /* Hover and active state styling */
+  .nav-link:hover {
+    color: #CA0610 !important; /* Slightly lighter on hover or when active */
+  }
+
+  .fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Adjust z-index as needed */
+}

@@ -1,0 +1,56 @@
+.story-section {
+    padding: 20px;
+  }
+  
+  .story-content {
+    display: flex;
+    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+    align-items: center;
+    justify-content: center;
+    gap: 100px; /* Space between image and text */
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .story-image {
+    flex: 0 0 35vw; /* Fixed width of 40% of the viewport width */
+  }
+  
+  .story-image img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+  }
+  
+  .story-text {
+    flex: 1; /* Takes available space */
+    min-width: 300px; /* Ensures a minimum width for the text block */
+  }
+  
+  .story-text h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2em;
+    color: #6f6f6f; /* Adjust the color as needed */
+  }
+  
+  .story-text p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
+    color: #333; /* Adjust the color as needed */
+    line-height: 1.5em; /* Better readability */
+  }
+  
+  @media (max-width: 768px) {
+    .story-content {
+      flex-direction: column; /* Stack image and text vertically on small screens */
+      text-align: center; /* Center align text on small screens */
+    }
+  
+    .story-image, .story-text {
+      flex: none; /* Remove flex properties */
+      width: 100%; /* Make each section take full width */
+    }
+  
+    .story-image {
+      margin-bottom: 20px; /* Space between image and text on small screens */
+    }
+  }

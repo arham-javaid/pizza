@@ -1,0 +1,64 @@
+ .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 3rem;
+  }
+  
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .contact-info{
+    flex-basis: 45%;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #F4EFE8;
+    line-height: 2;
+  }
+  .contact-info p{
+    margin-top: 1rem;
+  }
+  .contact-info p{
+    color: #82786E;
+  }
+  .contact-info p b{
+    color: #5E472B;
+  }
+
+  .order-form {
+    flex-basis: 45%;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #333333;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+  }
+
+  

@@ -1,0 +1,71 @@
+.master-chef-section {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    gap: 20px; /* Space between text and image */
+  }
+  
+  .content {
+    flex: 1;
+    max-width: 55%; /* Adjust as needed */
+    margin-right: 1rem;
+  }
+  
+  .content h2 {
+    font-size: 2rem;
+    font-family: "Arial", sans-serif; /* Adjust font as needed */
+    color: #555; /* Change color to fit your design */
+    padding-bottom: 1rem;
+  }
+  
+  .content p {
+    font-size: 1rem;
+    font-family: "Arial", sans-serif; /* Adjust font as needed */
+    color: #666; /* Change color to fit your design */
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .menu-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-button:hover {
+    background-color: #000;
+    color: red;
+  }
+  
+  .image-container {
+    flex: 1;
+    max-width: 45%; /* Adjust as needed */
+    margin-left: 3rem;
+  }
+  
+  .image-container img {
+    width: 40vw;
+    height: auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+  }
+  
+  @media (max-width: 992px) {
+    .master-chef-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .content {
+      max-width: 100%;
+    }
+  
+    .image-container {
+      max-width: 100%;
+    }
+  }
+  
